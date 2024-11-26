@@ -26,6 +26,7 @@ a {
   z-index: 1000;
   border-radius: 10px;
   padding: 15px; /* Padding internal */
+  box-shadow: 0px 0 15px rgba(37, 99, 235, 0.8);
 }
 
 /* Sidebar saat terbuka */
@@ -42,6 +43,31 @@ a {
   color: white;
 }
 
+/* Menambahkan Foto Profil */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Mengatur gambar dan teks ke tengah */
+  margin-bottom: 20px; /* Memberikan jarak antara foto dan menu */
+}
+
+.profile-img {
+  width: 80px; /* Ukuran foto profil */
+  height: 80px; /* Ukuran foto profil */
+  border-radius: 50%; /* Membuat gambar bulat */
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+  border: 2px solid rgb(75, 35, 252); /* Menambahkan border putih di sekitar gambar */
+  box-shadow: 0px 0 15px rgba(37, 99, 235, 0.8), 0px 0 15px rgba(37, 99, 235, 0.8);
+}
+
+/* Teks di bawah Foto Profil */
+.profile-name {
+  font-size: 1.2rem; /* Ukuran font untuk nama */
+  color: rgb(0, 0, 0); /* Warna teks */
+  margin-top: 10px; /* Jarak antara foto dan teks */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+}
 #sidebar nav {
   display: flex;
   flex-direction: column;
@@ -54,15 +80,22 @@ a {
   margin: 10px 0;
   padding: 10px;
   border-radius: 25px;
-  border: 2px solid #333;
+  border: 2px solid #6940ff;
   background-color: #7d4dff79;
   transition: background-color 0.3s ease;
+  box-shadow: 0px 0 15px rgba(37, 99, 235, 0.8);
 }
 
 #sidebar nav a:hover {
-  background-color: rgba(41, 3, 255, 0.452);
+  background-color: rgba(41, 3, 255, 0.452); /* Warna latar belakang biru transparan */
+  color: #fff; /* Pastikan warna teks tetap putih saat hover */
+  transform: scale(1.1); /* Membesarkan elemen saat hover */
+  box-shadow: 0px 4px 20px rgba(37, 99, 235, 0.7); /* Efek bayangan biru yang lebih terang */
+  padding-left: 15px; /* Memberikan efek pergeseran ke kiri saat hover */
+  border-left: 4px solid rgba(37, 99, 235, 0.8); /* Garis biru di kiri saat hover */
+  transition: all 0.3s ease;
+  transform: scale(1.1);
 }
-
 /* Overlay untuk menutup Sidebar */
 #overlay {
   position: fixed;
