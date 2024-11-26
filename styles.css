@@ -1,0 +1,137 @@
+/* Gaya Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f3f4f6;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Sidebar */
+#sidebar {
+  position: fixed;
+  top: 20px; /* Jarak dari atas */
+  left: -270px; /* Tersembunyi secara default */
+  width: 240px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparansi warna putih */
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  border-radius: 10px;
+  padding: 15px; /* Padding internal */
+}
+
+/* Sidebar saat terbuka */
+#sidebar.open {
+  left: 30px; /* Memberi jarak 30px dari sisi kiri */
+}
+
+.sidebar-toggle {
+  font-size: 2rem;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+  color: white;
+}
+
+#sidebar nav {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#sidebar nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid #333;
+  background-color: #7d4dff79;
+  transition: background-color 0.3s ease;
+}
+
+#sidebar nav a:hover {
+  background-color: rgba(41, 3, 255, 0.452);
+}
+
+/* Overlay untuk menutup Sidebar */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 900;
+}
+
+/* Konten Utama */
+main {
+  margin-left: 50px;
+  padding: 20px;
+  transition: margin-left 0.5s ease;
+}
+
+/* Konten saat Sidebar terbuka */
+#sidebar:not(.collapsed) ~ main {
+  margin-left: 250px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none; /* Hide default nav on mobile */
+  }
+}
+
+section {
+  padding: 4rem 1rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1200px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #2563eb;
+  margin-bottom: 1.5rem;
+}
+
+section p {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  max-width: 700px;
+  color: #555;
+}
