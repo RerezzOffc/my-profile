@@ -10,12 +10,13 @@
 </head>
 <body>
   <header>
+    <img src="https://pomf2.lain.la/f/ky5wal8o.jpg" alt="Foto Profil" class="header-img">
     <h1>Rerezz Official</h1>
     <i class="fas fa-bars sidebar-toggle" onclick="toggleSidebar()"></i>
-    </header>
+</header>
     <div id="sidebar">
         <div class="profile-container">
-            <img src="path-to-your-profile-image.jpg" alt="Foto Profil" class="profile-img">
+            <img src="https://pomf2.lain.la/f/ky5wal8o.jpg" alt="Foto Profil" class="profile-img">
             <p class="profile-name">Rerezz Official</p> 
           </div>
       <nav>
@@ -24,19 +25,20 @@
         <a href="#keahlian"><i class="fas fa-cogs"></i> Keahlian</a>
         <a href="#proyek"><i class="fas fa-project-diagram"></i> Proyek</a>
         <a href="#kontak"><i class="fas fa-envelope"></i> Kontak</a>
+        <a href="https://t.me/rerezz_official"><i class="fab fa-telegram"></i> Telegram</a>
       </nav>
     </div>
 
   <div id="overlay" onclick="closeSidebar()"></div>
 
   <section id="beranda">
-    <h2><i class="fas fa-smile"></i> Selamat Datang di Rerezz Official</h2>
+    <h2><i class="fas fa-smile"></i> Selamat Datang Di Website Saya</h2>
     <p>Solusi terbaik untuk pengembangan website modern dan pembuatan bot WhatsApp inovatif.</p>
   </section>
 
   <section id="tentang">
     <h2><i class="fas fa-info-circle"></i> Tentang Saya</h2>
-    <p>Halo! Saya <strong>Rerezz</strong>, seorang pengembang yang berdedikasi untuk menciptakan website responsif dan alat otomatisasi seperti bot WhatsApp untuk meningkatkan pengalaman pengguna dan efisiensi bisnis.</p>
+    <p>Halo! Saya <strong>Rerezz</strong>, seorang pengembang yang berdedikasi untuk menciptakan website responsif dan alat otomatisasi seperti bot WhatsApp untuk meningkatkan pengalaman pengguna dan efisiensi bisnis juga pembelajaran.</p>
   </section>
 
   <section id="keahlian">
@@ -74,6 +76,22 @@
           <div class="progress" style="width: 75%;"></div>
         </div>
       </div>
+      <div class="skill">
+        <i class="fab fa-php"></i>
+        <div class="skill-name">PHP</div>
+        <div class="progress-percentage">40%</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 40%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <i class="fab fa-python"></i>
+        <div class="skill-name">Python</div>
+        <div class="progress-percentage">35%</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 35%;"></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -82,30 +100,30 @@
     <div class="projects-container">
       <div class="project">
         <h3><i class="fas fa-laptop-code"></i> Proyek Website</h3>
-        <p>Platform e-commerce modern yang dirancang untuk pengalaman belanja online yang mulus.</p>
+        <p>Saya Sedang Membuat Sebuah Toko Online Public Yang Berbasis Node.js.</p>
       </div>
       <div class="project">
         <h3><i class="fas fa-robot"></i> Bot WhatsApp</h3>
-        <p>Bot AI yang dirancang untuk meningkatkan interaksi pelanggan dan otomatisasi alur kerja.</p>
+        <p>Saya Membuat Beberapa Source Code Bot WhatsApp Multi Fungsi</p>
       </div>
     </div>
   </section>
 
   <section id="kontak">
     <h2><i class="fas fa-phone-alt"></i> Kontak Saya</h2>
-    <form action="#" method="post">
-      <label for="nama">Nama</label>
-      <input type="text" id="nama" name="nama" placeholder="Nama Anda" required>
-      
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Email Anda" required>
-      
-      <label for="pesan">Pesan</label>
-      <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda" required></textarea>
-      
-      <button type="submit"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
+    <form id="contactForm">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Nama Anda" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email Anda" required>
+        
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda" required></textarea>
+        
+        <button type="button" id="sendEmailButton"><i class="fas fa-paper-plane"></i> Kirim Pesan Email</button>
     </form>
-  </section>
+</section>
 
   <footer>
     <p>&copy; 2024 Rerezz Official. Hak Cipta Dilindungi.</p>
