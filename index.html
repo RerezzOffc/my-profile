@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rerezz Official</title>
+  <!-- Link ke Font Awesome untuk ikon -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Rerezz Official</h1>
+    <i class="fas fa-bars sidebar-toggle" onclick="toggleSidebar()"></i>
+    </header>
+    <div id="sidebar">
+      <nav>
+        <a href="#beranda"><i class="fas fa-home"></i> Beranda</a>
+        <a href="#tentang"><i class="fas fa-user"></i> Tentang</a>
+        <a href="#keahlian"><i class="fas fa-cogs"></i> Keahlian</a>
+        <a href="#proyek"><i class="fas fa-project-diagram"></i> Proyek</a>
+        <a href="#kontak"><i class="fas fa-envelope"></i> Kontak</a>
+      </nav>
+    </div>
+
+  <div id="overlay" onclick="closeSidebar()"></div>
+
+  <section id="beranda">
+    <h2><i class="fas fa-smile"></i> Selamat Datang di Rerezz Official</h2>
+    <p>Solusi terbaik untuk pengembangan website modern dan pembuatan bot WhatsApp inovatif.</p>
+  </section>
+
+  <section id="tentang">
+    <h2><i class="fas fa-info-circle"></i> Tentang Saya</h2>
+    <p>Halo! Saya <strong>Rerezz</strong>, seorang pengembang yang berdedikasi untuk menciptakan website responsif dan alat otomatisasi seperti bot WhatsApp untuk meningkatkan pengalaman pengguna dan efisiensi bisnis.</p>
+  </section>
+
+  <section id="keahlian">
+    <h2><i class="fas fa-lightbulb"></i> Keahlian Saya</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <i class="fab fa-html5"></i>
+        <div class="skill-name">HTML</div>
+        <div class="progress-percentage">90%</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <i class="fab fa-css3-alt"></i>
+        <div class="skill-name">CSS</div>
+        <div class="progress-percentage">85%</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <i class="fab fa-js-square"></i>
+        <div class="skill-name">JavaScript</div>
+        <div class="progress-percentage">80%</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <i class="fab fa-node"></i>
+        <div class="skill-name">Node.js</div>
+        <div class="progress-percentage">75%</div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 75%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyek">
+    <h2><i class="fas fa-code"></i> Proyek</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3><i class="fas fa-laptop-code"></i> Proyek Website</h3>
+        <p>Platform e-commerce modern yang dirancang untuk pengalaman belanja online yang mulus.</p>
+      </div>
+      <div class="project">
+        <h3><i class="fas fa-robot"></i> Bot WhatsApp</h3>
+        <p>Bot AI yang dirancang untuk meningkatkan interaksi pelanggan dan otomatisasi alur kerja.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2><i class="fas fa-phone-alt"></i> Kontak Saya</h2>
+    <form action="#" method="post">
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" name="nama" placeholder="Nama Anda" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email Anda" required>
+      
+      <label for="pesan">Pesan</label>
+      <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda" required></textarea>
+      
+      <button type="submit"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Rerezz Official. Hak Cipta Dilindungi.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
